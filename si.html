@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign In by Kyou!</title>
+	<link rel="stylesheet" href="si.css">
+</head>
+<body>
+
+	<form onsubmit="return validateLogin(event)">
+		<label for="name">Name</label>
+		<input type="name" name="name" id="name" required><br>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" required><br>
+
+		<label for="submit">Submit</label>
+		<input type="submit" name="submit">
+	</form>
+
+	<button onclick="signUp()">Still don`t have an account?<br>No Problem! Sign Up</button>
+
+	<script>
+
+		const validCredentials = {
+			name: "miro",
+			password: "2025"
+		};
+
+
+		function validateLogin(event) {
+			event.preventDefault(); // Verhindert das automatische Absenden des Formulars
+
+			// Eingegebene Werte abrufen
+			let name = document.getElementById("name").value;
+			let password = document.getElementById("password").value;
+
+			// Überprüfung, ob die Anmeldedaten korrekt sind
+			if (email === validCredentials.email && password === validCredentials.password) {
+				window.location.href = "dashboard.html"; // Weiterleitung nach erfolgreichem Login
+			} else {
+				alert("False Name or False Password");
+			}
+		}
+
+		function signUp() {
+			window.location.href = "su.html"
+		}
+	</script>
+</body>
+</html>

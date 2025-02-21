@@ -1,0 +1,66 @@
+/* Allgemeine Stile */
+body {
+    background: url("C:/Users/urija/Downloads/12767930.jpg") center center/cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+/* Container */
+form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Überschrift */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #ff4655;
+}
+
+/* Labels und Inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+}
+
+/* Submit-Button */
+input[type="submit"] {
+    background: #ff4655;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #ff2a3d;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: silver;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
